@@ -23,9 +23,9 @@ The dataset reflects real industrial process conditions and is used to identify 
 </p>
 
 [Technological Process](notebooks/technological_process.ipynb)
-[Recovery Calculation] (notebooks/recovery_calculation.ipynb)
+[Recovery Calculation](notebooks/recovery_calculation.ipynb)
 
-##⚙️ Methodology
+## ⚙️ Methodology
 The project follows a structured Machine Learning regression workflow:
 1. Data Analysis & Preprocessing
   - Verified recovery calculation consistency
@@ -51,7 +51,7 @@ The project follows a structured Machine Learning regression workflow:
   - It is suitable for industrial forecasting tasks
   - Lower sMAPE values indicate better predictive performance.
 
-📈 Results
+## 📈 Results
 - Model Performance Comparison
   - Model	Final sMAPE
     - Linear Regression	12.76% 
@@ -61,7 +61,7 @@ The project follows a structured Machine Learning regression workflow:
 The Random Forest Regressor achieved the lowest prediction error with a final sMAPE of 10.58%, outperforming Linear Regression.
 This suggests that the relationship between process variables and gold recovery is non-linear and complex, which is better captured by ensemble tree-based methods.
 
-💼 Business Impact
+## 💼 Business Impact
 The model enables Zyfra to:
 - Identify key production parameters affecting gold recovery
 - Optimize technological processes
@@ -69,7 +69,7 @@ The model enables Zyfra to:
 - Support data-driven industrial decision-making
 - By integrating predictive modeling into production monitoring systems, the company can improve recovery rates and enhance overall profitability.
 
-▶️ How to Run the Project
+## ▶️ How to Run the Project
 1.	Clone this repository: git clone https://github.com/alangudi417/industrial-gold-recovery-prediction.git 
 2.	Navigate to the project folder: cd industrial-gold-recovery-prediction
 3.	Create and activate virtual environment: python -m venv venv venv\Scripts\activate # Windows source venv/bin/activate # Mac/Linux
