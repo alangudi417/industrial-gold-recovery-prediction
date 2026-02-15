@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-def metal_columns(df, metals=('au', 'ag', 'pb')):
+def clear_metal_columns(df, metals=('au', 'ag', 'pb')):
     """
     This function identifies metal-related columns and replaces zero values with NaN.
 
