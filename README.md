@@ -22,7 +22,7 @@ The dataset reflects real industrial process conditions and is used to identify 
   <img src="assets/gold_recovery_process.png " width="500"/>
 </p>
 
-[Technological Process](notebooks/technological_process.ipynb)
+[Technological Process](notebooks/technological_process.ipynb) <br>
 [Recovery Calculation](notebooks/recovery_calculation.ipynb)
 
 ## ⚙️ Methodology
