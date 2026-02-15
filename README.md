@@ -19,7 +19,7 @@ The dataset reflects real industrial process conditions and is used to identify 
 
 ## 🔬 Gold Extraction Process Overview
 <p align="center">
-  <img src="assets/gold_recovery_process.png " width="700"/>
+  <img src="assets/gold_recovery_process.png " width="500"/>
 </p>
 
 [Technological Process](notebooks/technological_process.ipynb)
