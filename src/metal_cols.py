@@ -1,0 +1,29 @@
+import pandas as pd
+import numpy as np
+
+def metal_columns(df, metals=('au', 'ag', 'pb')):
+    """
+    This function identifies metal-related columns and replaces zero values with NaN.
+
+    Parameters:
+        Input dataframe
+        metals: Metal keywords to search in column names
+
+    Returns:
+        Cleaned dataframe
+        List of identified metal columns with replaced zeros with null values
+    """
+
+    # Identify metal concentration columns
+    metal_columns = [
+        col for col in df.columns
+        if any(metal in col.lower() for metal in metals)
+    ]
+
+    print("Metal-related columns found:")
+    for col in metal_columns:
+        print(f"- {col}")
+
+    # Replace zeros with NaN
+    df[metal_columns] = df[metal_columns].replace(0, np.nan)
+    return df, metal_columns
