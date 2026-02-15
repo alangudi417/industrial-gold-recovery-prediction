@@ -57,9 +57,9 @@ The project follows a structured Machine Learning regression workflow:
     - Linear Regression	12.76% 
     - Random Forest Regressor	10.58%
 
-- Final Model Selection
-The Random Forest Regressor achieved the lowest prediction error with a final sMAPE of 10.58%, outperforming Linear Regression.
-This suggests that the relationship between process variables and gold recovery is non-linear and complex, which is better captured by ensemble tree-based methods.
+- Final Model Selection: <br>
+  - The Random Forest Regressor achieved the lowest prediction error with a final sMAPE of 10.58%, outperforming Linear Regression.
+  - This suggests that the relationship between process variables and gold recovery is non-linear and complex, which is better captured by ensemble tree-based methods.
 
 ## 💼 Business Impact
 The model enables Zyfra to:
