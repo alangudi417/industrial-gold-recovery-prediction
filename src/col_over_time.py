@@ -17,8 +17,8 @@ def missing_values_over_time(df, date_column, perc, threshold=30):
     frequencies = {
         'Hourly':'h',
         'Daily':'d',
-        'Weekly':'w',
-        'Monthly':'m'
+        'Weekly':'W',
+        'Monthly':'ME'
     }
 
     results = {}
@@ -31,9 +31,9 @@ def missing_values_over_time(df, date_column, perc, threshold=30):
                 .round(2)
         )
 
-    result = result.loc[result > threshold].sort_values(ascending=False)
+        result = result.loc[result > threshold].sort_values(ascending=False)
     
-    if not result.empty:
-        results[label] = result
+        if not result.empty:
+            results[label] = result
 
     return results
