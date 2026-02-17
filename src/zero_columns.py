@@ -3,7 +3,7 @@ import pandas as pd
 # This function helps to limit the result only to columns with zero values per dataset
 def show_zero_columns(df, df_name="Dataset"):
     zero_counts = (df == 0).sum()
-    zero_percent = ((df == 0).mean() * 100)
+    zero_percent = ((df == 0).mean() * 100).round(2)
 
     zero_summary = pd.DataFrame({
         "zero_count": zero_counts,
