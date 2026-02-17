@@ -11,7 +11,7 @@ def show_zero_columns(df, df_name="Dataset"):
     })
 
     zero_summary = zero_summary[zero_summary['zero_count'] > 0]  # Columns with null values only
-    zero_summary = zero_summary.sort_values('zero_count', ascending=False)  # Sort by highest null
+    zero_summary = zero_summary.sort_values('zero_count', ascending=False).head()  # Sort by highest null
 
     print(f"\nColumns with zero values in {df_name}:")
     if zero_summary.empty:

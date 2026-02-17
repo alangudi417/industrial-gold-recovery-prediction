@@ -11,7 +11,7 @@ def show_null_columns(df, df_name="Dataset"):
     })
 
     null_summary = null_summary[null_summary['null_count'] > 0]  # Columns with null values only
-    null_summary = null_summary.sort_values('null_count', ascending=False)  # Sort by highest null
+    null_summary = null_summary.sort_values('null_count', ascending=False).head()  # Sort by highest null
 
     print(f"\nColumns with null values in {df_name}:")
     if null_summary.empty:
