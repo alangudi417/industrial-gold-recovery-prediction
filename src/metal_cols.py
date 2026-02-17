@@ -24,6 +24,4 @@ def clear_metal_columns(df, metals=('au', 'ag', 'pb')):
     for col in metal_columns:
         print(f"- {col}")
 
-    # Replace zeros with NaN
-    df[metal_columns] = df[metal_columns].replace(0, np.nan)
     return df, metal_columns
