@@ -1,4 +1,4 @@
-def concentration_stages(
+def concentration_stages_cols(
         df,
         patterns=('rougher.input.feed', 'rougher.output.concentrate', 'final.output.concentrate'),
         exclude=('feed_rate', 'feed_size')
