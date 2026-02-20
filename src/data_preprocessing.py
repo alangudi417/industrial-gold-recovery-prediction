@@ -91,16 +91,32 @@ def remove_zero_total_concentration(df, stages_dict):
     Returns:
         final dataframe with the zero-total concentration data removed.
     """
+    initial_len = len(df)
+
+    stage_name = {
+        'Raw Material': 'total_raw_material',
+        'Rougher Concentrate': 'total_rougher_concentrate',
+        'Final Concentrate': 'total_final_concentrate'
+    }
+
     total_cols = []
 
     # Adding total columns
     for stage, cols in stages_dict.items():
-        total_col = f"{stage}_total"
-        df[total_col] = df[cols].sum(axis=1)
-        total_cols.append(total_col)
+        if cols:  # avoid errors if list is empty
+            total_col = stage_name.get(
+                stage,
+                f"total_{stage.lower().replace(' ', '_')}"
+            )
+            df[total_col] = df[cols].sum(axis=1)
+            total_cols.append(total_col)
 
     # Removing rows where the total concentration equals zero
-    df = df[(df[total_cols] > 0).all(axis=1)]
+    if total_cols:
+        df = df[(df[total_cols] > 0).all(axis=1)]
+
+    removed = initial_len - len(df)
+    print(f"Rows removed due to zero total concentration: {removed}")
     
     return df
 
@@ -116,7 +132,6 @@ def columns_total_concentrations(df, concentration_stages):
     Returns:
         updated dataframe with total concentration columns
     """
-
     stage_name = {
         'Raw Material':'total_raw_material',
         'Rougher Concentrate': 'total_rougher_concentrate',
