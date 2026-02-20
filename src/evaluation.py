@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 
 # Function to calculate recovery
 def calculate_rougher_recovery(df):
@@ -18,3 +19,4 @@ def calculate_rougher_recovery(df):
     # Apply metallurgical recovery formula
     recovery = (C * (F - T)) / (F * (C - T)) * 100
     return recovery
+
