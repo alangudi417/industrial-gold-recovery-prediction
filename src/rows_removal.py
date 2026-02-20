@@ -1,3 +1,5 @@
+import pandas as pd
+
 def remove_high_null(df, percent_column, threshold):
     """
     Removes rows whose percentage of missing values exceeds the given threshold.

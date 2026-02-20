@@ -1,3 +1,5 @@
+import pandas as pd
+
 def concentration_stages_cols(
         df,
         patterns=('rougher.input.feed', 'rougher.output.concentrate', 'final.output.concentrate'),
