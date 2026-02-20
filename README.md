@@ -54,8 +54,8 @@ The project follows a structured Machine Learning regression workflow:
 ## 📈 Results
 - Model Performance Comparison
   - Model	Final sMAPE
-    - Linear Regression	12.76% 
-    - Random Forest Regressor	10.58%
+    - Linear Regression	11.39% 
+    - Random Forest Regressor	8.99%
 
 - Final Model Selection: <br>
   - The Random Forest Regressor achieved the lowest prediction error with a final sMAPE of 10.58%, outperforming Linear Regression.
