@@ -6,6 +6,24 @@ Using historical data from different stages of the gold extraction and purificat
 The primary evaluation metric is sMAPE (Symmetric Mean Absolute Percentage Error), which is well suited for industrial forecasting problems.
 The objective is to minimize prediction error and support production optimization through data-driven decision-making.
 
+## 💼 Business Problem
+
+Gold recovery is a critical performance indicator in the mining and mineral processing industry. During the extraction process, ore passes through multiple stages of flotation and purification, where changes in chemical composition, material characteristics, and technological parameters can significantly affect the amount of gold ultimately recovered.
+
+For Zyfra, accurately predicting gold recovery is important because inefficient process conditions can result in lower recovery rates, wasted raw materials, increased processing costs, and reduced profitability.
+
+The production process generates a large volume of technological data across different stages, but understanding how these variables interact and predicting the final recovery rate can be difficult using traditional analysis alone.
+
+The business needs to answer questions such as:
+- How much gold can be expected to be recovered from a given batch of ore?
+- Which process parameters have the greatest influence on gold recovery?
+- Can recovery performance be predicted before the purification process is completed?
+- Which process conditions are associated with lower recovery rates?
+- How can operators identify potentially inefficient production conditions earlier?
+- Can predictive modeling help optimize the extraction process and improve overall recovery?
+
+Without a predictive approach, process optimization may depend heavily on historical averages, manual analysis, and operator experience. This can make it difficult to proactively identify inefficient conditions and determine how process parameters may affect the final recovery outcome.
+
 ## 📊 Dataset Description
 The dataset contains technological process parameters collected from multiple stages of gold extraction, including:
 - Flotation stage variables
