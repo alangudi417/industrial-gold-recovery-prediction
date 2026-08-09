@@ -24,6 +24,68 @@ The business needs to answer questions such as:
 
 Without a predictive approach, process optimization may depend heavily on historical averages, manual analysis, and operator experience. This can make it difficult to proactively identify inefficient conditions and determine how process parameters may affect the final recovery outcome.
 
+## ⚙️ Skills Developed
+
+#### 🛠️ Tools
+
+`Python` `Pandas` `NumPy` `Matplotlib` `Scikit-learn` `Jupyter` `Git` `GitHub`
+
+#### Data Analysis & Python
+
+- Pandas & NumPy
+- Data Cleaning & Validation
+- Exploratory Data Analysis (EDA)
+- Statistical Data Analysis
+- Data Visualization
+- Industrial Process Data Analysis
+
+#### Data Preprocessing
+
+- Missing Value Handling
+- Feature Selection
+- Feature Alignment
+- Data Consistency Validation
+- Data Transformation
+- Feature Scaling
+- Train/Test Data Preparation
+
+#### Machine Learning
+
+- Supervised Learning
+- Regression Modeling
+- Linear Regression
+- Random Forest Regressor
+- Machine Learning Pipelines
+- Cross-Validation
+- Model Comparison
+
+#### Model Evaluation
+
+- sMAPE (Symmetric Mean Absolute Percentage Error)
+- Cross-Validation Scoring
+- Prediction Error Analysis
+- Model Performance Comparison
+- Model Selection
+- Regression Performance Evaluation
+
+#### Industrial Process Analysis
+
+- Gold Recovery Prediction
+- Flotation Process Analysis
+- Purification Process Analysis
+- Technological Parameter Analysis
+- Recovery Rate Analysis
+- Production Performance Analysis
+
+#### Business Analytics
+
+- Production Optimization
+- Process Efficiency Analysis
+- Operational Risk Identification
+- Predictive Decision Support
+- Business Problem Translation
+- Data-Driven Decision Making
+
 ## 📊 Dataset Description
 The dataset contains technological process parameters collected from multiple stages of gold extraction, including:
 - Flotation stage variables
